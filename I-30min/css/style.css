@@ -1,0 +1,313 @@
+:root {
+    --yellow: #ffff00;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    
+    /* overflow: hidden; */
+    /* height: 100vh; */
+
+}
+
+.container {
+    position: relative;
+    /* border: 5px solid red; */
+    height: 100vh;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+header img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    margin: 0px 70px;
+}
+
+header button{
+    padding: 10px 15px;
+    background-color: var(--yellow);
+    border: 1px solid black;
+    margin: 5px 30px 0px 0px;
+}
+
+.banner {
+    padding: 0px 0px 40px 40px;
+}
+
+.banner h1 {
+    font-size: 60px;
+    max-width: 400px;
+    color: var(--yellow);
+}
+
+.banner button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 30px;
+    display: flex;
+    font-size: 20px;
+}
+
+.banner button:hover {
+    transition: all 500ms ease;
+    background-color: var(--yellow);
+}
+
+.banner button img {
+    height: 20px;
+    margin-left: 10px;
+    border: solid 1px black;
+}
+
+.banner button img:hover {
+    transition: all 500ms ease;
+    transform: rotate(40deg);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0px 47px 0px;
+
+}  
+
+.footerlist {
+    display: flex;
+    padding-left: 40px;
+}
+
+.footerlist ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.l-head {
+    margin: 0px 30px;
+    font-size: 15px;
+}
+
+.l-val{
+    margin: 0px 30px;
+    font-size: 30px;
+}
+
+.z1 , .z2 {
+    background-color: var(--yellow);
+    height: 100%;
+    width: 60px;
+    right: 350px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.z2 {
+    right: 200px;
+}
+
+.Carousel {
+    position: absolute;
+    top: 170px;
+    right: 0px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    height: 60%;
+    width: 60%;
+    /* background-color: blue; */
+    /* width: 700px; */
+}
+
+.carouselBox {
+    position: relative;
+    /* background-color: blue; */
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+}
+
+.slides{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: all 2s ease;    
+    /* background-color: peru; */
+    
+    /* overflow: hidden; */
+}
+
+.Carousel img {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    right: 60px;
+    transition: all 2s ease;
+    /* display: none; */
+} 
+
+#pic2 {
+    right: 90px;
+    transition: all 2s ease;
+}
+
+#pic3 {
+    right: 100px;
+    width: 70%;
+    transition: all 2s ease;
+}
+
+.forwardBtn, .backBtn {
+    max-height: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 270px;
+    bottom: 90px;
+    z-index: 2;
+}
+
+.backBtn{
+    left: 60%;
+}
+
+.noshow {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+    }
+
+    header {
+        height: 10%;
+    }
+
+    header a {
+        display: none;
+    }
+
+    main {
+        height: 40%;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        max-width: 300px;
+        text-align: center;
+    }  
+
+    .z1 , .z2 {  
+        right: 45px;
+        width: 40px;
+        height: 50%;
+    }
+
+    .z2 {
+        right: 110px;
+    }
+
+    /* .Carousel{
+        top: 320px;
+        right: 0;
+    }
+
+    .Carousel img {
+        height: 150px;
+    } */
+
+    .Carousel {
+        
+        height: 30%;
+        width: 80%;
+        top: 230px;
+       
+    }
+    
+    
+    .Carousel img {
+        width: 65%;
+        top: 100px;
+        right: 50px;
+        transition: all 2s ease;
+        /* display: none; */
+    } 
+    
+    #pic2 {
+        right: 90px;
+        transition: all 2s ease;
+    }
+    
+    #pic3 {
+        right: 100px;
+        width: 70%;
+        transition: all 2s ease;
+    }
+    
+    .forwardBtn, .backBtn {
+        max-height: 4rem;
+        right: 170px;
+        bottom: 300px;
+    }
+
+    .backBtn {
+        left: 22px;
+    }
+
+    
+    footer {
+        height: 50%;
+        padding: 20px;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .footerlist {
+        display: flex;
+        flex-direction: column;
+        padding: 75px 0px 0px 0px;
+    }
+
+    .l-head {
+        font-size: 30px;
+        margin: 0px;
+        padding: 0;
+    }
+
+    .l-val {
+        font-size: 20px;
+        margin: 5px 0px;
+        padding: 0;
+    }
+
+
+    
+}
